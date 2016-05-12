@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<!-- Analytics -->
+	 <script> 
+    $(function(){
+      $("#includedContent").load("tracking.html"); 
+    });
+    </script> 
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72805127-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <title>Where's Waldo?: The Musical</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/half-slider.css" rel="stylesheet">
+	<style>
+	.bubble 
+{
+position: relative;
+width: 250px;
+height: 170px;
+padding: 5px;
+background: #E8E8E8;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 15px 15px 0;
+border-color: transparent #E8E8E8;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -15px;
+left: -15px;
+top: 70%;
+}
+	</style>
+	
+	<!--nav style fix for waldo page-->
+	<style>
+	
+	.navbar-inverse {
+  background-color: #F82C2A;
+  border-color: #ffffff;
+}
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-text {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #333;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #333;
+}
+
+	
+	</style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">ABO</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+					<li>
+                        <a href="productions.html" class="active">Productions</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Half Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+			<li data-target="#myCarousel" data-slide-to="4"></li>
+
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                
+                <div class="fill" style="background-image:url('/img/waldo/IMG_4104 (2).JPG');"></div>
+                <div class="carousel-caption">
+                    <h2>Billy Ambrose as Waldo</h2>
+                </div>
+            </div>
+            <div class="item">
+                
+                <div class="fill" style="background-image:url('/img/waldo/IMG_4107 (2).JPG');"></div>
+                <div class="carousel-caption">
+                    <h2>Members of the W.I.B. doing their jobs.  </h2>
+                </div>
+            </div>
+            <div class="item">
+                
+                <div class="fill" style="background-image:url('/img/waldo/IMG_4149 (2).JPG');"></div>
+                <div class="carousel-caption">
+                    <h2>Waldo and Wenda</h2>
+                </div>
+            </div>
+			<div class="item">
+                
+                <div class="fill" style="background-image:url('/img/waldo/IMG_4151 (2).JPG');"></div>
+                <div class="carousel-caption">
+                    <h2>Who is this? (Hint: It's Odlaw)</h2>
+                </div>
+            </div>
+			<div class="item">
+                
+                <div class="fill" style="background-image:url('/img/waldo/IMG_4172 (2).JPG');"></div>
+                <div class="carousel-caption">
+                    <h2>Waldo and his mentor.</h2>
+                </div>
+            </div>
+			
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Where's Waldo?: The Musical</h1>
+				<br>
+				<center><iframe width="100%" height="315" src="https://www.youtube.com/embed/oHpWoetVhm8?rel=0" frameborder="0" allowfullscreen></iframe></center>
+				<br>
+				<br>
+				<h2>You can now watch Waldo!</h2>
+				<a class="btn-danger btn-lg" href=https://youtu.be/r97qy1d7r_Q target="_blank">Watch Where's Waldo: The Musical</a>
+				
+				<br>
+				<br>
+                <p>In 2011, Billy Ambrose, Nicholas Goodyear, and Trey Hennessy had a dream to create a musical based on the universe of Where's Waldo.  They sought to create a comedic back story as to why people are searching for Waldo.  It was just an idea then.</p>
+				<p>Four lears later in 2015, after a wonderful experience with A Very Potter Musical with ABO Productions, Billy and Nick knew they had found an amazing group of dedicated individuals - a group that would try anything.  In the blink of an eye, Billy and Nick became eager to pick up Where's Waldo?: The Musical again.  They began writing.  </p>
+				<p>It wasn't until October of 2014 that Billy and Nick recruited Ben McLaughlin and Sal Azzara to work on the musical.  Sal and Nick began exchanging music ideas while Ben, Billy, and Nick dedicated over six hours per week sitting in Panera and pouring their brains into a Google Doc that contained Where's Waldo?: The Musical.  </p>
+				<p>After over at least $1000 spent at Panera, many late nights of writing, scrapping countless songs, arguments, hurt feelings, a brutally difficult casting with the help of Nicole Telesco and Andrew Cohen, and a month and a half of hard work, the cast, crew, writers and directors have put together an incredible show.  </p>
+				<br>
+				<p>Where's Waldo?: The Musical will be performed on July 23, 24, and 26 at the Plumsteadville Volunteer Fire Company Banquet Hall.  Rather than tickets, there is a recommended $10 donation at the door.  The show is PG-13.  Everyone involved in the production wishes to see you there!</p>
+				<br><br><br>
+				<div class="bubble"><h2>Don't wear socks.  They'll just be knocked off.  </h2></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Anything But Ordinary Productions 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	
+	
+	
+	
+	
+	<!-- jQuery 
+    <script src="js/jquery.js"></script> -->
+
+    <!-- Bootstrap Core JavaScript 
+    <script src="js/bootstrap.min.js"></script> -->
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
